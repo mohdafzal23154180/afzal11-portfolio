@@ -6,21 +6,9 @@ nav {
     background: white;
 }
 .about {
-    padding: 60px 20px;
+    padding: 80px 20px;
     text-align: center;
-    background-color: #f4f4f4;
-}
-
-.about h2 {
-    font-size: 32px;
-    margin-bottom: 20px;
-}
-
-.about p {
-    max-width: 700px;
-    margin: auto;
-    font-size: 18px;
-    line-height: 1.6;
+    background: linear-gradient(to right, #f4f6ff, #e9ecff);
 }
 
 nav ul {
@@ -106,3 +94,4 @@ button:hover {
     background: #f1f1f1;
 
 }
+
