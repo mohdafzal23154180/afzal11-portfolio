@@ -5,6 +5,23 @@ nav {
     padding: 15px 50px;
     background: white;
 }
+.about {
+    padding: 60px 20px;
+    text-align: center;
+    background-color: #f4f4f4;
+}
+
+.about h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+.about p {
+    max-width: 700px;
+    margin: auto;
+    font-size: 18px;
+    line-height: 1.6;
+}
 
 nav ul {
     display: flex;
@@ -87,4 +104,5 @@ button:hover {
 #contact {
     padding: 50px;
     background: #f1f1f1;
+
 }
