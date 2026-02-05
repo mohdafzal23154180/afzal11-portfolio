@@ -51,6 +51,9 @@ header h1 {
     text-decoration: none;
     border-radius: 5px;
 }
+html {
+    scroll-behavior: smooth;
+}
 
 button {
     padding: 12px 25px;
@@ -117,6 +120,7 @@ button:hover {
     background: #f1f1f1;
 
 }
+
 
 
 
