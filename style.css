@@ -1,14 +1,38 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.hero,
+.about,
+.projects,
+.contact {
+    width: 100%;
+}
+.hero {
+    background-color: #0b2c5f;
+    color: white;
+    padding: 100px 20px;
+    text-align: center;
+}
+
+body {
+    width: 100%;
+    overflow-x: hidden;
+    font-family: Arial, sans-serif;
+}
+
 nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 15px 50px;
     background: white;
-}
-.about {
-    padding: 80px 20px;
-    text-align: center;
-    background: linear-gradient(to right, #f4f6ff, #e9ecff);
 }
 
 nav ul {
@@ -42,6 +66,10 @@ header {
 header h1 {
     font-size: 40px;
 }
+html {
+    scroll-behavior: smooth;
+}
+
 .btn {
     display: inline-block;
     margin-top: 20px;
@@ -51,10 +79,6 @@ header h1 {
     text-decoration: none;
     border-radius: 5px;
 }
-html {
-    scroll-behavior: smooth;
-}
-
 button {
     padding: 12px 25px;
     border: none;
@@ -70,6 +94,12 @@ button:hover {
     background: #2a5298;
     color: white;
 }
+.about {
+    padding: 80px 20px;
+    text-align: center;
+    background: linear-gradient(to right, #f4f6ff, #e9ecff);
+}
+
 
 .services {
     display: flex;
@@ -94,37 +124,35 @@ button:hover {
     padding: 80px 20px;
     text-align: center;
     background: #ffffff;
+    width: 100%;
 }
 
 .project-card {
     background: #f4f6ff;
     padding: 20px;
-    margin: 20px auto;
-    width: 60%;
+    margin: 20px;
     border-radius: 10px;
     box-shadow: 0 5px 15px rgba(0,0,0,0.1);
 }
-@media (max-width: 768px) {
-    .services {
-        flex-direction: column;
-        align-items: center;
-    }
 
-    nav {
-        flex-direction: column;
-        gap: 10px;
-    }
-}
-#contact {
-    padding: 50px;
-    background: #f1f1f1;
-
-}
 /* Contact Section */
 .contact {
     padding: 80px 20px;
     text-align: center;
     background: #f9f9ff;
+    width: 100%;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 90%;
+    max-width: 450px;
 }
 
 .contact-info p {
@@ -183,29 +211,19 @@ button:hover {
 html {
     scroll-behavior: smooth;
 }
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+
+@media (max-width: 768px) {
+    .services {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav {
+        flex-direction: column;
+        gap: 10px;
+    }
 }
-
-body {
-    width: 100%;
-    overflow-x: hidden;
-    font-family: Arial, sans-serif;
+#contact {
+    padding: 50px;
+    background: #f1f1f1;
 }
-.contact-form {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.contact-form input,
-.contact-form textarea {
-    width: 90%;
-    max-width: 450px;
-}
-
-
-
-
