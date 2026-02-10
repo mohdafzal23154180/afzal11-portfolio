@@ -1,100 +1,94 @@
-
-
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>My First Landing Page</title>
+    <meta charset="UTF-8">
+    <title>Md Afzal | Portfolio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- CSS File -->
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <nav>
-    <div class="logo">Afzal</div>
-    <ul>
-        <li><a href="#">Home</a></li>
-        <li><a href="#">Services</a></li>
-        <li><a href="#">Contact</a></li>
-    </ul>
-</nav>
 
+    <!-- Navbar -->
     <header>
-        <h1>Hi, I'm Md Afzal</h1>
-<p>BSc IT Graduate | Python Developer | Future MCA Aspirant</p>
-<a href="#projects" class="btn">View My Work</a>
+        <div class="container">
+            <h2 class="logo">My First Landing Page</h2>
+            <nav>
+                <a href="#about">About</a>
+                <a href="#services">Services</a>
+                <a href="#projects">Projects</a>
+                <a href="#contact">Contact</a>
+            </nav>
+        </div>
     </header>
-    <section class="about">
-    <div class="container">
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Hi, I'm Md Afzal</h1>
+            <p>BSc IT Graduate | Frontend Developer | Learning Full Stack</p>
+            <a href="#contact" class="btn">Hire Me</a>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
         <h2>About Me</h2>
         <p>
-            Hi, I'm Afzal, a BSc IT student from Bihar.
-            I have skills in HTML, CSS, JavaScript, Java, Python and DBMS.
-            I am passionate about building clean, modern and responsive websites.
+            I am a BSc IT graduate passionate about web development and software engineering.
+            I love building responsive and modern websites using HTML, CSS, and JavaScript.
+            My goal is to become a professional full-stack developer.
         </p>
-    </div>
-</section>
+    </section>
 
-    <section>
+    <!-- Services Section -->
+    <section id="services" class="services">
         <h2>My Services</h2>
-        <div class="services">
+        <div class="service-box">
             <div class="card">
                 <h3>Website Design</h3>
-                <p>Beautiful and clean website designs.</p>
+                <p>Modern and responsive website design using HTML & CSS.</p>
             </div>
 
             <div class="card">
-                <h3>Responsive Design</h3>
-                <p>Mobile friendly websites.</p>
+                <h3>Frontend Development</h3>
+                <p>Interactive UI development using JavaScript.</p>
             </div>
 
             <div class="card">
-                <h3>Fast Delivery</h3>
-                <p>Quick and professional service.</p>
+                <h3>Basic Backend</h3>
+                <p>Learning backend technologies to build full stack apps.</p>
             </div>
         </div>
     </section>
-    <section class="projects">
-    <h2>My Projects</h2>
 
-    <div class="project-card">
-        <h3>Student Management System (Python)</h3>
-        <p>A console-based system to add, view and manage student records using file handling in Python.</p>
-    </div>
-    <a href="https://github.com/mohdafzal23154180" target="_blank">View Code</a>
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <h2>My Projects</h2>
+        <ul>
+            <li>✔ Student Management System (Java)</li>
+            <li>✔ Personal Portfolio Website</li>
+            <li>✔ Basic Calculator (JavaScript)</li>
+        </ul>
+    </section>
 
-    <div class="project-card">
-        <h3>Portfolio Website</h3>
-        <p>A responsive personal portfolio website built using HTML and CSS.</p>
-    </div>
-</section>
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <h2>Contact Me</h2>
 
-<section id="contact" class="contact">
-    <h2>Contact Me</h2>
-    <p>If you'd like to work with me or have any questions, feel free to reach out.</p>
+        <form>
+            <input type="text" placeholder="Your Name" required>
+            <input type="email" placeholder="Your Email" required>
+            <textarea rows="5" placeholder="Your Message"></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
 
-    <div class="contact-info">
-        <p><strong>Email:</strong> mohd.afzal945276@gmail.com</p>
-        <p><strong>LinkedIn:</strong> 
-            <a href="https://www.linkedin.com/in/mohd-afzal-669144394" target="_blank">
-                Visit Profile
-            </a>
-        </p>
-        <p><strong>GitHub:</strong> 
-            <a href="https://github.com/mohdafzal23154180" target="_blank">
-                View GitHub
-            </a>
-        </p>
-    </div>
-
-    <form class="contact-form">
-        <input type="text" placeholder="Your Name" required>
-        <input type="email" placeholder="Your Email" required>
-        <textarea placeholder="Your Message" rows="5" required></textarea>
-        <button type="submit">Send Message</button>
-    </form>
-</section>
+    <!-- Footer -->
+    <footer>
+        <p>© 2026 Md Afzal | All Rights Reserved</p>
+    </footer>
 
 </body>
 </html>
-
-
-
-
