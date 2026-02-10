@@ -120,6 +120,69 @@ button:hover {
     background: #f1f1f1;
 
 }
+/* Contact Section */
+.contact {
+    padding: 80px 20px;
+    text-align: center;
+    background: #f9f9ff;
+}
+
+.contact-info p {
+    margin: 10px 0;
+}
+
+.contact a {
+    color: #4a63e7;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.contact a:hover {
+    text-decoration: underline;
+}
+
+/* Contact Form */
+.contact-form {
+    margin-top: 30px;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 80%;
+    max-width: 400px;
+    padding: 12px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+}
+
+.contact-form button {
+    padding: 12px 25px;
+    background: #4a63e7;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+/* Button Hover Animation */
+.contact-form button:hover {
+    background: #2d47c7;
+    transform: scale(1.05);
+}
+
+/* Card Hover Effect (Projects etc.) */
+.card:hover {
+    transform: translateY(-10px);
+    transition: 0.3s ease;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+}
+
+/* Smooth Scroll */
+html {
+    scroll-behavior: smooth;
+}
 
 
 
