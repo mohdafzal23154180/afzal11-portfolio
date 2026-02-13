@@ -1,119 +1,159 @@
-/* Reset */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: Arial, sans-serif;
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial,sans-serif;
 }
 
-body {
-    line-height: 1.6;
+html{
+    scroll-behavior:smooth;
 }
 
-/* Container */
-.container {
-    width: 90%;
-    max-width: 1100px;
-    margin: auto;
+body{
+    background:#0f2027;
+    color:white;
+    transition:0.4s;
 }
 
-/* Header */
-header {
-    background: #111;
-    color: white;
-    padding: 15px 0;
+/* Floating Navbar */
+nav{
+    position:fixed;
+    width:100%;
+    top:0;
+    display:flex;
+    justify-content:space-between;
+    padding:15px 8%;
+    background:rgba(0,0,0,0.6);
+    backdrop-filter:blur(10px);
+    z-index:1000;
 }
 
-header .container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+nav ul{
+    display:flex;
+    gap:20px;
+    list-style:none;
 }
 
-header nav a {
-    color: white;
-    text-decoration: none;
-    margin-left: 20px;
+nav a{
+    color:white;
+    text-decoration:none;
 }
 
-header nav a:hover {
-    color: #00bcd4;
+.dark-btn{
+    cursor:pointer;
 }
 
 /* Hero */
-.hero {
-    background: linear-gradient(to right, #4facfe, #00f2fe);
-    color: white;
-    text-align: center;
-    padding: 100px 20px;
+.hero{
+    height:100vh;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    background:linear-gradient(to right,#1f4037,#99f2c8);
+    padding-top:80px;
 }
 
-.hero h2 {
-    font-size: 40px;
-    margin-bottom: 15px;
+.primary-btn{
+    margin-top:20px;
+    padding:12px 30px;
+    border:none;
+    cursor:pointer;
+    background:#00adb5;
+    color:white;
+    border-radius:30px;
+    transition:0.3s;
 }
 
-.hero p {
-    font-size: 18px;
-    margin-bottom: 20px;
+.primary-btn:hover{
+    transform:scale(1.1);
 }
 
-.btn {
-    background: white;
-    color: #333;
-    padding: 10px 20px;
-    text-decoration: none;
-    border-radius: 5px;
-    font-weight: bold;
+/* Sections */
+.section{
+    padding:100px 8%;
+    text-align:center;
 }
 
-.btn:hover {
-    background: #ddd;
-}
-
-/* About */
-.about {
-    padding: 80px 20px;
-    text-align: center;
-    background: linear-gradient(to right, #f4f6ff, #e9ecff);
+/* Glass Effect */
+.glass{
+    background:rgba(255,255,255,0.1);
+    backdrop-filter:blur(10px);
+    border-radius:15px;
+    margin:20px;
+    padding:40px;
 }
 
 /* Skills */
-.skills {
-    padding: 80px 20px;
-    text-align: center;
+.skill{
+    margin:20px auto;
+    max-width:400px;
 }
 
-.skills ul {
-    list-style: none;
+.bar{
+    background:#333;
+    height:10px;
+    border-radius:10px;
 }
 
-.skills li {
-    display: inline-block;
-    background: #4facfe;
-    color: white;
-    padding: 10px 15px;
-    margin: 5px;
-    border-radius: 5px;
+.progress{
+    height:10px;
+    width:0;
+    background:#00adb5;
+    border-radius:10px;
+    transition:2s;
 }
 
 /* Projects */
-.projects {
-    padding: 80px 20px;
-    text-align: center;
-    background: #f9f9f9;
+.project-card{
+    margin:20px auto;
+    padding:20px;
+    max-width:300px;
+    background:rgba(255,255,255,0.1);
+    border-radius:15px;
+    transition:0.3s;
+}
+
+.project-card:hover{
+    transform:translateY(-10px);
 }
 
 /* Contact */
-.contact {
-    padding: 80px 20px;
-    text-align: center;
+form{
+    display:flex;
+    flex-direction:column;
+    gap:15px;
+    max-width:400px;
+    margin:auto;
 }
 
-/* Footer */
-footer {
-    background: #111;
-    color: white;
-    text-align: center;
-    padding: 20px;
+input,textarea{
+    padding:10px;
+    border:none;
+    border-radius:10px;
+}
+
+/* Scroll Animation */
+.fade{
+    opacity:0;
+    transform:translateY(40px);
+    transition:1s;
+}
+
+.fade.active{
+    opacity:1;
+    transform:translateY(0);
+}
+
+/* Dark Mode */
+body.dark{
+    background:#111;
+}
+
+/* Responsive */
+@media(max-width:768px){
+    nav ul{
+        flex-direction:column;
+    }
 }
